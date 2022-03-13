@@ -10,14 +10,9 @@ error_reporting(E_ERROR | E_PARSE);
       <?php if($mensaje != ""){?>
         <div class="alert alert-success">
             <?php 
-                echo($mensaje); 
-                if ($mensaje = "Para Empezar a comprar Inicie Sesión") {
-                    echo "<a href='index.php' class='badge badge-success'>Iniciar Sesion</a>";      
-                } else {
-                    echo "<a href='mostrarCarrito.php' class='badge badge-success'>Ver carrrito</a>";
-                }
-                
+                echo($mensaje);                 
             ?>
+            <a href='mostrarCarrito.php' class='badge badge-success'>Ver carrrito</a>
         </div>
       <?php }?>
         <div class="row">
